@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Author" content="TK Vishal" />
+    <meta
+      name="Description"
+      content="TK Vishal's personal website and portfolio"
+    />
+    <meta property="og:site_name" content="TK Vishal's Portfolio" />
+    <meta property="og:title" content="TK Vishal" />
+    <meta property="og:description" content="Developer • Designer • Student" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      itemprop="image/png"
+      content="https://imgur.com/8eyzLGO.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <meta name="theme-color" content="#fd4445" />
+    <title>Works - TK Vishal</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="works">
+    <div class="left-layer fade">
+      <!-- <div class="secret">
+        secret: go to tkvishal.now.sh/secret.html
+      </div> -->
+    </div>
+    <div class="left-layer left-layer--2"></div>
+    <div class="back-btn" onClick="pageTransition()">
+      <i class="fa fa-arrow-left"></i>
+    </div>
+    <div class="header fadeIn delay-400">
+      <div class="header-title">
+        Works
+      </div>
+      <div class="desc">
+        The stuff I've worked on :P (2016 - now)
+      </div>
+      <div class="scroll-down">&gt;</div>
+    </div>
+    <div class="main-wrap fadeOpacity delay-800" style="overflow: hidden;">
+      <div class="floating-svg-1 floating">
+        <svg height="50" width="50">
+          <circle cx="25" cy="25" r="20" fill="#fd4445" class="circle" />
+        </svg>
+      </div>
+      <div class="floating-svg-2 floating">
+        <svg height="50" width="50">
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+            fill="transparent"
+            stroke-width="5"
+            stroke="#475e86"
+            class="circle"
+          />
+        </svg>
+      </div>
+      <div class="floating-svg-3 floating">
+        <svg width="100" height="100">
+          <rect
+            stroke-width="20"
+            stroke="#3a21db"
+            fill="transparent"
+            width="100"
+            height="100"
+          ></rect>
+        </svg>
+      </div>
+      <div class="floating-svg-4 floating">
+        <svg width="100" height="100">
+          <polygon
+            points="50 15, 100 100, 0 100"
+            stroke-width="8"
+            stroke="#f33935"
+            fill="transparent"
+          />
+        </svg>
+      </div>
+      <div class="container projects">
+        <div class="row">
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>Exoplanet Explore</h2>
+                  <div class="content">
+                    Exoplanet Explore is a Data driven Visual Analysis of
+                    Exoplanets. The project is made for data analysis hackathon
+                    by hackerearth. It won first prize! The project took about
+                    15 days to build. It was an awesome experience.
+                  </div>
+                  <div class="visit-btn">
+                    <a href="https://exoplanetexplore.now.sh/" target="_blank">
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                    <a
+                      href="https://github.com/sanvishal/Exoplanet-Explore"
+                      target="_blank"
+                    >
+                      <i class="fa fa-github"></i>
+                    </a>
+                  </div>
+                  <p style="color: #333333;">
+                    HTML5 • D3.js • Data Viz • Python • Pandas
+                  </p>
+                  <div class="pic"></div>
+                  <button id="exop"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>Yata</h2>
+                  <div class="content">
+                    "Yata" stands for "Yet Another Todo App", It is made for a
+                    hackathon in about 14 days. It is a comprehensive todo list
+                    based on #hashtags. You can label todos, create deadline,
+                    edit todos and archive them.
+                  </div>
+                  <div class="visit-btn">
+                    <a href="https://yataapp.now.sh/" target="_blank">
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                    <a href="https://github.com/sanvishal/Yata" target="_blank">
+                      <i class="fa fa-github"></i>
+                    </a>
+                  </div>
+                  <p>React • MongoDB • Express • Nodejs • SASS</p>
+                  <div
+                    class="pic"
+                    style="background-image: url(img/yata.png);"
+                  ></div>
+                  <button id="yata"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>TalkNow</h2>
+                  <div class="content">
+                    A global chatroom made in just ~5 hours to chat with
+                    friends. You can embed an image, embed gifs with
+                    <em>/[gifname]</em>. It helped us chat and exchange
+                    information from one PC to another as there was no easier
+                    means of communication in college labs. It was fun making it
+                    and watch people using it.
+                  </div>
+                  <div class="visit-btn">
+                    <a href="https://talknow.now.sh/" target="_blank">
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                    <a
+                      href="https://github.com/sanvishal/TalkNow"
+                      target="_blank"
+                    >
+                      <i class="fa fa-github"></i>
+                    </a>
+                  </div>
+                  <p>HTML5 • SocketIO • Nodejs • Material Design • PWA</p>
+                  <div
+                    class="pic"
+                    style="background-image: url(img/talk.png);"
+                  ></div>
+                  <button id="talk"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>Internship</h2>
+                  <div class="content">
+                    I joined a startup as an intern working with a project known
+                    as
+                    <em>Listiee</em>
+                    using MERN stack. I worked on backend writing/rewriting API
+                    routes, database models. Also, building new components on
+                    the frontend using reactjs. Learnt lot of production level
+                    stuff. It taught me how much I didn't know.
+                  </div>
+                  <div class="visit-btn" style="right: 10px;">
+                    <a
+                      href="https://internshala.com/student/certificate/22843288/295F2A42-E502-7502-8A0E-52044F11D783"
+                      target="_blank"
+                    >
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                  </div>
+                  <p>MERN Stack • Redis • UI Design</p>
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(img/intern.png);
+                      background-size: 90%;
+                    "
+                  ></div>
+                  <button id="intern"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>Smart Glass</h2>
+                  <div class="content">
+                    A head mounted display(google glass) but waaaaay cheaper(₹
+                    1200). We, as a team made the prototype for the device for a
+                    project competition. When paired to a phone using bluetooth,
+                    it shows battery percentage, time, date, mails and calls.
+                    Since this is our first time, we learnt a lot of hardware
+                    and wiring.
+                  </div>
+                  <p style="color: #333333;">
+                    Arduino • C language • Bluetooth • OLED Display • Product
+                    Design
+                  </p>
+                  <div
+                    class="pic"
+                    style="background-image: url(img/glass.jpeg);"
+                  ></div>
+                  <button id="glass"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>Igniculus 2k18</h2>
+                  <div class="content">
+                    I made a website for college symposium. This was my very
+                    first project on the web. I was thinking about learning web
+                    technologies in the second semester and this project was a
+                    perfect opportunity. learnt HTML, CSS, and basic jQuery &
+                    JS. Finished the website within a 4 days and deployed at
+                    Heroku, learnt by making a lot of funny mistakes when
+                    hosting, domain linking and in SEO.
+                  </div>
+                  <div class="visit-btn" style="right: 10px;">
+                    <a
+                      href="https://igniculus2k18.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                  </div>
+                  <p>HTML5 • jQuery • First Project</p>
+                  <div
+                    class="pic"
+                    style="background-image: url(img/igni.png);"
+                  ></div>
+                  <button id="igni"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>Games</h2>
+                  <div class="content">
+                    I was an Indie 2D Game developer when I was in school. Love
+                    for games pushed me to make games instead of playing them. I
+                    made some $$$ off making games. I left game dev, since I was
+                    not studying well xD I am still up for game dev any day, any
+                    time!
+                  </div>
+                  <div class="visit-btn" style="right: 10px;">
+                    <a href="https://tkgames.itch.io/" target="_blank">
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                  </div>
+                  <p style="color: #333333;">
+                    Game Maker Studio • Pixel art • Game Design • Game Mechanics
+                  </p>
+                  <div
+                    class="pic"
+                    style="background-image: url(img/games.png);"
+                  ></div>
+                  <button id="games"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project column">
+            <div class="project__inner">
+              <div class="card-container">
+                <div class="card">
+                  <h2>More Stuff!</h2>
+                  <div class="content">
+                    More random stuff on my github :P
+                  </div>
+                  <div class="visit-btn" style="right: 10px;">
+                    <a href="https://github.com/sanvishal/" target="_blank">
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                  </div>
+                  <p style="color: #333333;">
+                    "Good ideas are always crazy until they're not"
+                    <br /><em>-Elon Musk</em>
+                  </p>
+                  <div
+                    class="pic"
+                    style="background-image: url(img/more.png);"
+                  ></div>
+                  <button id="more"></button>
+                  <div class="foreground"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/works.js"></script>
+</html>

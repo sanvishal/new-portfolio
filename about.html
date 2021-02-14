@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en" style = "overflow-x: hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Author" content="TK Vishal" />
+    <meta
+      name="Description"
+      content="TK Vishal's personal website and portfolio"
+    />
+    <meta property="og:site_name" content="TK Vishal's Portfolio" />
+    <meta property="og:title" content="TK Vishal" />
+    <meta property="og:description" content="Developer • Designer • Student" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      itemprop="image/png"
+      content="https://imgur.com/8eyzLGO.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <meta name="theme-color" content="#fd4445" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>About - TK Vishal</title>
+  </head>
+  <body id = "about">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      style="position: absolute;"
+    >
+      <defs>
+        <filter id="squiggly-0">
+          <feTurbulence
+            id="turbulence"
+            baseFrequency="0.02"
+            numOctaves="3"
+            result="noise"
+            seed="0"
+          />
+          <feDisplacementMap
+            id="displacement"
+            in="SourceGraphic"
+            in2="noise"
+            scale="6"
+          />
+        </filter>
+        <filter id="squiggly-1">
+          <feTurbulence
+            id="turbulence"
+            baseFrequency="0.02"
+            numOctaves="3"
+            result="noise"
+            seed="1"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+
+        <filter id="squiggly-2">
+          <feTurbulence
+            id="turbulence"
+            baseFrequency="0.02"
+            numOctaves="3"
+            result="noise"
+            seed="2"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-3">
+          <feTurbulence
+            id="turbulence"
+            baseFrequency="0.02"
+            numOctaves="3"
+            result="noise"
+            seed="3"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+
+        <filter id="squiggly-4">
+          <feTurbulence
+            id="turbulence"
+            baseFrequency="0.02"
+            numOctaves="3"
+            result="noise"
+            seed="4"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="left-layer">
+      <!-- <div class = "secret">
+        secret: go to tkvishal.now.sh/secret.html
+      </div> -->
+    </div>
+    <div class="left-layer left-layer--2">
+    </div>
+    <div id = "top-bar" class = "smh"></div>
+    <div class="about-header fadeIn delay-200>
+      <div class="my-face">
+        <div class = "img-border"></div>
+        <img src="img/me.png" />
+      </div>
+    </div>
+    <div class = "about-me fadeIn delay-400">
+      About Me
+    </div>
+    <div class = "text-wrap fadeIn delay-600">
+      <div class = "about-intro">
+        Hey there, you actually clicked here to know more! that's nice of you :3
+
+        <br/><br/>
+        I'm <span class = "terb-highlight">TK Vishal</span> from Chennai. A 20yo Electronics and Communication Engineering student at Velammal Institute of Technology. 
+        I would generally call myself as an introverted <span class = "terb-highlight">maker</span>. I make stuff that is fun as well as useful (well sometimes :P).
+        I like making apps, web apps and small hacks that would improve my productivity. I'm really into space and tech, likes exploring the intersection between 
+        <span class = "terb-highlight">design and data</span>. I never get tired of watching a <span class = "terb-highlight">SpaceX</span> rocket landing xD. 
+        <br/><br/>
+        I was a <span class = "terb-highlight">2D Indie Game Developer</span> in my school days, it taught me a lot about how marketing 
+        and self promotion is important than making a game itself. I started learning <span class = "terb-highlight">Web Technologies</span> in my 
+        2nd semester of college. worked on front to back end, wore a lot of hats and found myself being good at <span class = "terb-highlight">frontend</span>
+        and design. Learning all of these only from the internet was a wild roller coaster but also fun experience.
+        <br/><br/>
+        If you read this far, congrats! I hope we meetup and turn our ideas to reality. Hit me up on any of my socials 
+        <br/><br/><br/>
+        <span style = "animation: squiggly-anim 0.7s ease-in-out infinite; padding: 10px;" class = "terb-highlight">(ﾉ◕ヮ◕)ﾉ *:・ﾟ✧</span>
+      </div>
+    </div>
+    <div
+      class="about-back-btn"
+      onClick="pageTransition()"
+    >
+      <i class="fa fa-arrow-left"></i>
+  </div>
+  </body>
+  <script src="js/about.js"></script>
+</html>

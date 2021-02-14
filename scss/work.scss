@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700,900&display=swap");
+
+@keyframes blinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(4);
+  }
+  to {
+    transform: rotate(359deg) scale(4);
+  }
+}
+
+#works {
+  background: #333333;
+  overflow: unset !important;
+}
+
+.back-btn {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+  color: white;
+  margin-top: 20px;
+  z-index: 9;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  background: #333333;
+  filter: blur(0px);
+
+  &-title {
+    padding-top: 15px;
+    font-size: 150px;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 20px;
+
+    @include mq("900px") {
+      font-size: 80px;
+    }
+  }
+
+  .desc {
+    color: grey;
+    font-size: 18px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+
+    &.active {
+      opacity: 0;
+    }
+  }
+
+  .scroll-down {
+    opacity: 0;
+    transform: rotate(90deg);
+    color: grey;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+    animation: blinkFade alternate-reverse 1s infinite ease-in-out;
+  }
+}
+
+.main-wrap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: calc(100% - 30px);
+  //height: 100vh;
+  background: #fdfdfd;
+  z-index: 9;
+  border-radius: 5px;
+  -webkit-transform: translate3d(0, 400px, 0);
+  -ms-transform: translate3d(0, 400px, 0);
+  transform: translate3d(0, 400px, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .floating {
+    position: absolute;
+
+    &.floating-svg-1 {
+      left: 50px;
+      top: 200px;
+      transform: scale(10);
+      opacity: 0.2;
+    }
+
+    &.floating-svg-2 {
+      right: 50px;
+      top: 378px;
+      transform: scale(9);
+      opacity: 0.2;
+    }
+
+    &.floating-svg-3 {
+      left: 10px;
+      top: 1000px;
+      animation: spin 300s infinite linear;
+      opacity: 0.2;
+    }
+
+    &.floating-svg-4 {
+      right: 10px;
+      top: 1000px;
+      transform: scale(7) rotate(65deg);
+      opacity: 0.2;
+    }
+
+    @include mq("900px") {
+      display: none;
+    }
+  }
+
+  &.active {
+    -webkit-transform: translate3d(0, 20px, 0);
+    -ms-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .projects {
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        height: 350px;
+        margin-right: 35px;
+
+        @include mqmin("900px") {
+          flex: 1;
+        }
+
+        @include mq("900px") {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .projects {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    @include mq("900px") {
+      width: 100%;
+    }
+    .project {
+      &__inner {
+        width: 98%;
+        height: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+
+          .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            overflow: hidden;
+            margin-bottom: 4px;
+            border-radius: 0px;
+            box-shadow: 0px 7px 40px rgba(0, 0, 0, 0);
+            transform: scale(1);
+            transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+            &:hover {
+              box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.15);
+              transform: scale(1.06);
+            }
+
+            h2 {
+              pointer-events: none;
+              z-index: 99;
+              font-family: "Poppins", sans-serif;
+              position: absolute;
+              bottom: 20px;
+              left: 20px;
+              font-size: 52px;
+              font-weight: 700;
+              color: black;
+              transition: all 0.2s ease;
+
+              @include mq("900px") {
+                font-size: 40px;
+                line-height: 1.1;
+              }
+            }
+
+            p {
+              z-index: 99;
+              position: absolute;
+              bottom: 10px;
+              left: 20px;
+              color: grey;
+              opacity: 1;
+              font-size: 15px;
+              letter-spacing: 1px;
+              -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease;
+              width: 65%;
+
+              @include mq("900px") {
+                font-size: 12px;
+              }
+            }
+
+            .content {
+              position: absolute;
+              z-index: 99;
+              left: 200px;
+              top: 62px;
+              opacity: 0;
+              transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+              //transition-delay: 0.1s;
+              overflow: hidden;
+              color: white;
+              font-weight: bold;
+              width: 100%;
+              height: 100%;
+              line-height: 1.1;
+              font-size: 20px;
+              padding-right: 10px;
+
+              @include mq("900px") {
+                top: 50px;
+                font-size: 16px;
+              }
+            }
+
+            .pic {
+              z-index: 100;
+              width: 100%;
+              height: 100%;
+              background-image: url("https://media.wired.com/photos/5a0b8999653cd631c096f712/16:9/w_2048,h_1152,c_limit/spacex-FA.jpg");
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              filter: grayscale(0);
+            }
+
+            .visit-btn {
+              a {
+                opacity: 0;
+                color: white;
+                position: relative;
+                bottom: 0px;
+                display: inline-block;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+
+                &:hover {
+                  bottom: -5px;
+                }
+              }
+
+              font-size: 14px;
+              //background: #fdfdfd;
+
+              font-weight: bold;
+              z-index: 100;
+              position: absolute;
+              right: 0px;
+              bottom: 10px;
+              font-size: 40px;
+              cursor: pointer;
+              will-change: transform;
+              -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+              -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease;
+
+              @include mq("900px") {
+                -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+                bottom: 10px;
+                right: 0px;
+              }
+            }
+
+            &:hover .visit-btn > a {
+              opacity: 0.9;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+
+              @include mq("900px") {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+              }
+            }
+
+            button {
+              position: absolute;
+              right: 14px;
+              bottom: 14px;
+              width: 30px;
+              height: 30px;
+              background-color: #de2f53;
+
+              &#yata {
+                background-color: hsl(248, 74%, 49%);
+              }
+
+              &#talk {
+                background-color: #2e5f5a;
+              }
+
+              &#intern {
+                background-color: #475e86;
+              }
+
+              &#glass {
+                background-color: #404040;
+              }
+
+              &#igni {
+                background-color: #632e2f;
+              }
+
+              &#games {
+                background-color: #f33935;
+              }
+
+              &#more {
+                background-color: #843c2d;
+              }
+
+              border: none;
+              border-radius: 30px;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease;
+              mix-blend-mode: hard-light;
+            }
+
+            .foreground {
+              position: absolute;
+              width: 100%;
+              height: 70%;
+              bottom: 0;
+              background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0.7)
+              );
+              transition: all 0.3s ease;
+            }
+
+            &:hover .foreground {
+              background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              );
+            }
+
+            &:hover button {
+              border-radius: 0px;
+              transform: scale(80);
+
+              @include mq("900px") {
+                transform: scale(30);
+              }
+            }
+
+            &:hover p {
+              color: #fff !important;
+              @include mq("900px") {
+                left: 5px;
+              }
+            }
+
+            &:hover .pic {
+              filter: grayscale(100%);
+              opacity: 0.3;
+            }
+
+            &:hover h2 {
+              bottom: 230px;
+              font-size: 40px;
+              color: white;
+
+              @include mq("900px") {
+                left: 5px;
+                bottom: 250px;
+                font-size: 30px;
+              }
+            }
+
+            &:hover .content {
+              top: 62px;
+              left: 20px;
+              opacity: 0.9;
+              width: auto;
+
+              @include mq("900px") {
+                left: 5px;
+                top: 45px;
+                width: 96%;
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
